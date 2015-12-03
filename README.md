@@ -18,7 +18,7 @@ A quick overview
 There are two things that need to happen to for an IPP app to get bootstrapped
 
 1. You need to have your customer log in and get validated with the Intuit system
-2. You need to get the customers permission to access their day
+2. You need to get the customers permission to access their data
 
 (1) Corresponds to OpenID. (2) corresponds to OAuth.
 
