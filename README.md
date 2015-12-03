@@ -75,7 +75,7 @@ Once authenticated, Catmandu needs to ask Jane for authorization to access her K
 
 
  A note on security
- ================
+ ---------------
  
  OAuth tokens should be considered secure data, and be encrypted in your storage (_review intuit security guidelines_)
 
