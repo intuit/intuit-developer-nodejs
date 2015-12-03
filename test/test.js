@@ -26,7 +26,7 @@ describe ('QuickBooks Setup', function() {
         it('should have the qboauth object available after login ', function (done) {
             user1
                 .get(baseURL + "importdata/qboauth")
-                //.send({email: "siddharth_ram@intuit.com", password: "mootex12"})
+                //.send({email: "", password: ""})
                 //.get("http://localhost:3000/quickbooks/start")
                 // .send({ name: 'Manny', species: 'cat' })
                 // .set('X-API-Key', 'foobar')
