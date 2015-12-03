@@ -1,0 +1,12 @@
+title Authorization Sequence
+
+Catmandu->Intuit: Request Request Token
+Intuit->Catmandu: Grant Request Token (oauth token, oauth token secret)
+Catmandu->Intuit: Request Access Token
+Catmandu->Intuit: Redirect Jane to Realm Selector from Intuit
+note left of Jane: Jane selects 'Keyser's Cakes' company
+Intuit->Catmandu: Redirect Jane back to Catmandu
+Intuit->Catmandu: Grant Access Token
+Intuit->Catmandu: redirect Jane back to Catmandu. 
+note right of Catmandu: At this point, OAuth flows are complete.
+note right of Catmandu: Catmandu has the oauth Consumer Key and OAuth Token

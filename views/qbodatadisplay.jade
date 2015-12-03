@@ -1,0 +1,11 @@
+
+extends layout
+block content
+    head
+        title 'QBO data'
+    body
+        ul
+            for account in accounts.QueryResponse.Account
+             li= JSON.stringify(account.Name)
+
+
