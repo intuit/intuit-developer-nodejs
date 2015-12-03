@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        title #{pageTitle}
+        script(type='text/javascript', src='https://appcenter.intuit.com/Content/IA/intuit.ipp.anywhere.js')
+    body
+        p #{port} #{appCenter}
+        a(href='/quickbase') connect to quickbase
+        p
+        script(type='text/javascript').
+            intuit.ipp.anywhere.setup({
+            menuProxy: '',
+            grantUrl: 'http://localhost:' +  #{port}  + '/quickbooks/requestToken'
+            });
+        ipp:connectToIntuit
+

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    head
+        title 'Sign in'
+
+        script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js')
+        script(type='text/javascript', src='https://js.appcenter.intuit.com/Content/IA/intuit.ipp.anywhere.js')
+    body
+        p Welcome to CanCan
+        if user ==  undefined
+            a(href="/intuit") Sign On with Intuit
+        else
+            p hello #{user.emails[0]}
+            a(href="/quickbooks") load QuickBooks Data
+       // ipp:login(href="http://localhost:3000/intuit/return", type="vertical")
+

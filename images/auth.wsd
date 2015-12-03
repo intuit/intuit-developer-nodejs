@@ -1,0 +1,16 @@
+title Authentication Sequence
+
+Jane->Catmandu: visit home page
+Jane->Catmandu: Agree to sign up
+Catmandu->Jane: redirect to openid.intuit.com
+Jane->Intuit: Sign in using Intuit credentials
+Intuit->Catmandu: redirect Jane back to Catmandu with OpenID assertion.
+note right of Catmandu
+At this point OpenID authentication flow is complete. 
+Catmandu receives the following as part of the OpenID assertion:
+Email ID,Full Name, First Name, Last Name.
+end note
+
+note right of Catmandu
+Catmandu uses the OpenID assertion to provision Jane as a user in its system.
+end note
