@@ -8,6 +8,7 @@ While OpenID and Oauth are essential to ensure proper operation with the Intuit 
 The example here is in Node: But it can of course to reused using your favorite programming language. Where possible, we like using SDK's. In this example, we use mcohen's excellent wrapper around the QuickBooks API to get bootstrapped.
 
 Node makes it easy to build applications that use OpenID and OAuth, thanks to the QuickBooks API, [mcohen's Node SDK](https://github.com/mcohen01/node-quickbooks, "quickbooks node")  and [Jared Hansson's ](https://github.com/jaredhanson/passport-intuit, "passport-intuit") SDK, which makes
+
 it easy to integrate with OpenID. We will use all of the above. 
 
 You will need to store some data returned from the OpenID protocols and OAuth. We are using mongo in this example.
