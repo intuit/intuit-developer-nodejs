@@ -23,7 +23,7 @@
     "underscore": "1.9.1",
     "express-session": "1.15.6",
     "express-router": "0.0.1",
-    "mongoose": "5.4.20",
+    "mongoose": "5.7.6",
     "passport-intuit": "0.2.0",
     "passport": "0.4.0",
     "properties-reader": "0.0.16",
